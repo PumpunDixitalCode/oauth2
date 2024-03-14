@@ -200,9 +200,7 @@ class AuthorizationCodeGrant {
     var parameters = {
       'response_type': 'code',
       'client_id': identifier,
-      'redirect_uri': redirect.toString(),
-      'code_challenge': codeChallenge,
-      'code_challenge_method': 'S256'
+      'redirect_uri': redirect.toString()
     };
 
     if (state != null) parameters['state'] = state;
